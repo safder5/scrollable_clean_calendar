@@ -10,7 +10,6 @@ class DaysWidget extends StatelessWidget {
   final double calendarCrossAxisSpacing;
   final double calendarMainAxisSpacing;
   final Layout? layout;
-  final Gradient? gradient;//added 
   final Widget Function(
     BuildContext context,
     DayValues values,
@@ -38,7 +37,6 @@ class DaysWidget extends StatelessWidget {
     required this.dayDisableColor,
     required this.radius,
     required this.textStyle,
-    required this.gradient,//added
   }) : super(key: key);
 
   @override
@@ -143,7 +141,7 @@ class DaysWidget extends StatelessWidget {
       color: backgroundColor != null
           ? backgroundColor!.computeLuminance() > .5
               ? Colors.black
-              : Colors.white//colors were black and white
+              : Colors.white
           : Theme.of(context).colorScheme.onSurface,
     );
 
@@ -301,10 +299,6 @@ class DaysWidget extends StatelessWidget {
       alignment: Alignment.center,
       decoration: BoxDecoration(
         color: bgColor,
-        gradient: const LinearGradient(//changes done here as well
-        colors: [Color(0xFFF98174),Color(0xFFFFB300)]
-        ),
-      
         borderRadius: borderRadius,
       ),
       child: Text(
