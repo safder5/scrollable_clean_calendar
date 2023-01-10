@@ -195,7 +195,7 @@ class DaysWidget extends StatelessWidget {
     return Container(
       alignment: Alignment.center,
       decoration: BoxDecoration(
-        color: Colors.white,//changed
+      
         gradient: const LinearGradient(
         colors: [Color(0xFFF98174),Color(0xFFFFB300)]
         ),
@@ -306,7 +306,7 @@ class DaysWidget extends StatelessWidget {
         gradient: const LinearGradient(//changes done here as well
         colors: [Color(0xFFF98174),Color(0xFFFFB300)]
         ),
-        color: Colors.white,
+      
         borderRadius: borderRadius,
       ),
       child: Text(
