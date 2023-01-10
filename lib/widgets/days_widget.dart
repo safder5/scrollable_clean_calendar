@@ -193,7 +193,10 @@ class DaysWidget extends StatelessWidget {
     return Container(
       alignment: Alignment.center,
       decoration: BoxDecoration(
-        color: bgColor,
+        color: Colors.white,
+        gradient: const LinearGradient(
+        colors: [Color(0xFFF98174),Color(0xFFFFB300)]
+        ),
         borderRadius: BorderRadius.circular(radius),
         border: values.day.isSameDay(values.minDate)
             ? Border.all(
