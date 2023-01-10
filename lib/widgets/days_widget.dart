@@ -306,7 +306,7 @@ class DaysWidget extends StatelessWidget {
         gradient: const LinearGradient(//changes done here as well
         colors: [Color(0xFFF98174),Color(0xFFFFB300)]
         ),
-        color: bgColor,
+        color: Colors.transparent,
         borderRadius: borderRadius,
       ),
       child: Text(
