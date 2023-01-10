@@ -142,8 +142,8 @@ class DaysWidget extends StatelessWidget {
         (textStyle ?? Theme.of(context).textTheme.bodyText1)!.copyWith(
       color: backgroundColor != null
           ? backgroundColor!.computeLuminance() > .5
-              ? Colors.white
-              : Colors.black//colors were black and white
+              ? Colors.black
+              : Colors.white//colors were black and white
           : Theme.of(context).colorScheme.onSurface,
     );
 
@@ -195,10 +195,7 @@ class DaysWidget extends StatelessWidget {
     return Container(
       alignment: Alignment.center,
       decoration: BoxDecoration(
-      
-        gradient: const LinearGradient(
-        colors: [Color(0xFFF98174),Color(0xFFFFB300)]
-        ),
+        color: bgColor,
         borderRadius: BorderRadius.circular(radius),
         border: values.day.isSameDay(values.minDate)
             ? Border.all(
