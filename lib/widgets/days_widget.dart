@@ -142,8 +142,8 @@ class DaysWidget extends StatelessWidget {
         (textStyle ?? Theme.of(context).textTheme.bodyText1)!.copyWith(
       color: backgroundColor != null
           ? backgroundColor!.computeLuminance() > .5
-              ? Colors.transparent
-              : Colors.transparent//colors were black and white
+              ? Colors.white
+              : Colors.black//colors were black and white
           : Theme.of(context).colorScheme.onSurface,
     );
 
