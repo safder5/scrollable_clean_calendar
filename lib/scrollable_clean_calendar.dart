@@ -212,6 +212,7 @@ class _ScrollableCleanCalendarState extends State<ScrollableCleanCalendar> {
                   dayDisableColor: widget.dayDisableColor,
                   radius: widget.dayRadius,
                   textStyle: widget.dayTextStyle,
+                  gradient: LinearGradient(colors: [Color(0xFFF98174),Color(0xFFFFD300)]),
                 );
               },
             )
