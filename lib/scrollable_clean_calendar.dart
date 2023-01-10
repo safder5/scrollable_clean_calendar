@@ -1,4 +1,4 @@
-library scrollable_clean_calendar;
+library scrollable_clean_calendar_guido;
 
 import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
